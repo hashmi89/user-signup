@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def index():
     return render_template('index.html')
 
-@app.route("/", methods=["POST"])
+@app.route("/welcome", methods=["POST"])
 def sign_up():
     username = request.form["username"]
     password_input = request.form["password"]
